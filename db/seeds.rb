@@ -11,7 +11,7 @@ require "open-uri"
 
 puts 'Creating articles...'
 
-Indredient.destroy_all
+Ingredient.destroy_all
 
 url = "https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list"
 data = JSON.parse(open(url).read)['drinks']
